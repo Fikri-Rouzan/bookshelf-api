@@ -13,7 +13,7 @@ const init = async () => {
     },
   });
 
-  // Route untuk menyimpan buku
+  // Route to store a book
   server.route({
     method: "POST",
     path: "/books",
@@ -33,7 +33,7 @@ const init = async () => {
         return h
           .response({
             status: "fail",
-            message: "Gagal menambahkan buku. Mohon isi nama buku",
+            message: "Failed to add the book. Please fill in the book title",
           })
           .code(400);
       }
@@ -43,7 +43,7 @@ const init = async () => {
           .response({
             status: "fail",
             message:
-              "Gagal menambahkan buku. readPage tidak boleh lebih besar dari pageCount",
+              "Failed to add the book. readPage cannot be greater than pageCount",
           })
           .code(400);
       }
@@ -73,7 +73,7 @@ const init = async () => {
       return h
         .response({
           status: "success",
-          message: "Buku berhasil ditambahkan",
+          message: "The book has been successfully added",
           data: {
             bookId: id,
           },
@@ -82,7 +82,7 @@ const init = async () => {
     },
   });
 
-  // Route untuk menampilkan semua buku
+  // Route to display all books
   server.route({
     method: "GET",
     path: "/books",
@@ -125,7 +125,7 @@ const init = async () => {
     },
   });
 
-  // Route untuk menampilkan detail buku
+  // Route to display book details
   server.route({
     method: "GET",
     path: "/books/{bookId}",
@@ -138,7 +138,7 @@ const init = async () => {
         return h
           .response({
             status: "fail",
-            message: "Buku tidak ditemukan",
+            message: "Book not found",
           })
           .code(404);
       }
@@ -152,7 +152,7 @@ const init = async () => {
     },
   });
 
-  // Route untuk mengubah data buku
+  // Route to update book data
   server.route({
     method: "PUT",
     path: "/books/{bookId}",
@@ -173,7 +173,7 @@ const init = async () => {
         return h
           .response({
             status: "fail",
-            message: "Gagal memperbarui buku. Mohon isi nama buku",
+            message: "Failed to update the book. Please fill in the book title",
           })
           .code(400);
       }
@@ -183,7 +183,7 @@ const init = async () => {
           .response({
             status: "fail",
             message:
-              "Gagal memperbarui buku. readPage tidak boleh lebih besar dari pageCount",
+              "Failed to update the book. readPage cannot be greater than pageCount",
           })
           .code(400);
       }
@@ -194,7 +194,7 @@ const init = async () => {
         return h
           .response({
             status: "fail",
-            message: "Gagal memperbarui buku. Id tidak ditemukan",
+            message: "Failed to update the book. ID not found",
           })
           .code(404);
       }
@@ -217,12 +217,12 @@ const init = async () => {
 
       return {
         status: "success",
-        message: "Buku berhasil diperbarui",
+        message: "The book has been successfully updated",
       };
     },
   });
 
-  // Route untuk menghapus buku
+  // Route to delete a book
   server.route({
     method: "DELETE",
     path: "/books/{bookId}",
@@ -235,7 +235,7 @@ const init = async () => {
         return h
           .response({
             status: "fail",
-            message: "Buku gagal dihapus. Id tidak ditemukan",
+            message: "The book failed to be deleted. ID not found",
           })
           .code(404);
       }
@@ -244,13 +244,13 @@ const init = async () => {
 
       return {
         status: "success",
-        message: "Buku berhasil dihapus",
+        message: "The book has been successfully deleted",
       };
     },
   });
 
   await server.start();
-  console.log(`Server berjalan pada ${server.info.uri}`);
+  console.log(`Server running on ${server.info.uri}`);
 };
 
 init();
