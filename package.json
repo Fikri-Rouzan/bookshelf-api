@@ -1,17 +1,13 @@
 {
   "name": "bookshelf-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/server.js",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
     "start-dev": "nodemon src/server.js",
-    "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
-  "keywords": [],
-  "author": "",
   "dependencies": {
     "@hapi/hapi": "^21.4.0",
     "nanoid": "^3.3.11",

@@ -14,6 +14,14 @@ const init = async () => {
 
   server.route(routes);
 
+  server.route({
+    method: "GET",
+    path: "/",
+    handler: () => {
+      return { message: "Bookshelf API is running! 🚀" };
+    },
+  });
+
   await server.start();
   console.log(`Server running on ${server.info.uri}`);
 };

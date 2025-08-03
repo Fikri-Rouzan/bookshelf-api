@@ -1,14 +1,12 @@
 # Bookshelf API
 
-## About Bookshelf API
+## ℹ️ About
 
-Bookshelf API is a Back-End CRUD application built with JavaScript.
+Bookshelf API is a RESTful API that provides full CRUD (Create, Read, Update, Delete) functionality for managing a digital book collection.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- Programming Language: JavaScript.
-- Framework: Hapi.
-- Libraries: Nano ID and nodemon.
-- Runtime Server: Node.js.
-- API Testing: Postman.
-- Software: Visual Studio Code.
+- 🌐 Programming Language: JavaScript.
+- 🧩 Framework: hapi.
+- ⚛️ Libraries: Nano ID and nodemon.
+- 💻 Software: Visual Studio Code and Postman.

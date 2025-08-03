@@ -1,6 +1,6 @@
 # API Documentation
 
-## Add Book API
+## ➕ Add Book API
 
 Endpoint: POST /books
 
@@ -58,7 +58,7 @@ Response Body Error (If readPage is greater than pageCount):
 }
 ```
 
-## Get Books API
+## 📖 Get Books API
 
 Endpoint: GET /books
 
@@ -100,7 +100,7 @@ Response Body Success (If the array is empty):
 }
 ```
 
-## Get Book Details API
+## 🔎 Get Book Details API
 
 Endpoint: GET /books/{bookId}
 
@@ -137,7 +137,7 @@ Response Body Error:
 }
 ```
 
-## Update Book API
+## 🔄 Update Book API
 
 Endpoint: PUT /books/{bookId}
 
@@ -192,7 +192,7 @@ Response Body Error (If readPage is greater than pageCount):
 }
 ```
 
-## Delete Book API
+## 🗑️ Delete Book API
 
 Endpoint: DELETE /books/{bookId}
 
