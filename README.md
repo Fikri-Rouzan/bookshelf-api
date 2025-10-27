@@ -6,7 +6,7 @@ Bookshelf API is a RESTful API that provides full CRUD (Create, Read, Update, De
 
 ## 🛠️ Technologies Used
 
-- 🌐 Programming Language: JavaScript.
-- 🧩 Framework: hapi.
-- ⚛️ Libraries: Nano ID and nodemon.
-- 💻 Software: Visual Studio Code and Postman.
+- 🌐 **Programming Language:** JavaScript.
+- 🧩 **Framework:** hapi.
+- ⚛️ **Libraries:** Nano ID and nodemon.
+- 💻 **Software:** Visual Studio Code and Postman.
