@@ -23,6 +23,7 @@ Layanan back-end RESTful API untuk pengelolaan katalog dan catatan buku. Layanan
    - Node.js 24 atau lebih baru.
    - Git terinstal di komputer.
    - PNPM 10 terinstal di komputer (Opsional).
+   - Postman terinstal di komputer.
 
 2. **Clone Repositori**
 
