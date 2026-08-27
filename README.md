@@ -52,10 +52,10 @@ npm run start
 npm run start-dev
 
 # Dengan pnpm
-pnpm run start
+pnpm start
 
 # Dengan pnpm nodemon
-pnpm run start-dev
+pnpm start-dev
 ```
 
 ---
