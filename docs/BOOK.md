@@ -4,7 +4,7 @@
 
 Endpoint: POST /books
 
-Request Body:
+- Request Body:
 
 ```json
 {
@@ -19,7 +19,7 @@ Request Body:
 }
 ```
 
-Response Body Success:
+- Response Body Success:
 
 ```json
 {
@@ -31,7 +31,7 @@ Response Body Success:
 }
 ```
 
-Response Body Error:
+- Response Body Error:
 
 ```json
 {
@@ -40,7 +40,7 @@ Response Body Error:
 }
 ```
 
-Response Body Error (If the name is not included):
+- Response Body Error (If the name is not included):
 
 ```json
 {
@@ -49,7 +49,7 @@ Response Body Error (If the name is not included):
 }
 ```
 
-Response Body Error (If readPage is greater than pageCount):
+- Response Body Error (If readPage is greater than pageCount):
 
 ```json
 {
@@ -62,7 +62,7 @@ Response Body Error (If readPage is greater than pageCount):
 
 Endpoint: GET /books
 
-Response Body Success:
+- Response Body Success:
 
 ```json
 {
@@ -89,7 +89,7 @@ Response Body Success:
 }
 ```
 
-Response Body Success (If the array is empty):
+- Response Body Success (If the array is empty):
 
 ```json
 {
@@ -104,7 +104,7 @@ Response Body Success (If the array is empty):
 
 Endpoint: GET /books/{bookId}
 
-Response Body Success:
+- Response Body Success:
 
 ```json
 {
@@ -128,7 +128,7 @@ Response Body Success:
 }
 ```
 
-Response Body Error:
+- Response Body Error:
 
 ```json
 {
@@ -141,7 +141,7 @@ Response Body Error:
 
 Endpoint: PUT /books/{bookId}
 
-Request Body:
+- Request Body:
 
 ```json
 {
@@ -156,7 +156,7 @@ Request Body:
 }
 ```
 
-Response Body Success:
+- Response Body Success:
 
 ```json
 {
@@ -165,7 +165,7 @@ Response Body Success:
 }
 ```
 
-Response Body Error:
+- Response Body Error:
 
 ```json
 {
@@ -174,7 +174,7 @@ Response Body Error:
 }
 ```
 
-Response Body Error (If the name is not included):
+- Response Body Error (If the name is not included):
 
 ```json
 {
@@ -183,7 +183,7 @@ Response Body Error (If the name is not included):
 }
 ```
 
-Response Body Error (If readPage is greater than pageCount):
+- Response Body Error (If readPage is greater than pageCount):
 
 ```json
 {
@@ -196,7 +196,7 @@ Response Body Error (If readPage is greater than pageCount):
 
 Endpoint: DELETE /books/{bookId}
 
-Response Body Success:
+- Response Body Success:
 
 ```json
 {
@@ -205,7 +205,7 @@ Response Body Success:
 }
 ```
 
-Response Body Error:
+- Response Body Error:
 
 ```json
 {
